@@ -2,11 +2,13 @@ import React from 'react'
 
 const Counter = () => {
 
-    let count = 5;
+    // let count = 5;
+    const [count,setCount] = React.useState(5);
 
     const countUp = () => {
-        count++;
-        alert(count);
+        // count++;
+        // alert(count);
+        setCount(count + 1);
     }
     return ( 
         <div>
