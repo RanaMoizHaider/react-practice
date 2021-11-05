@@ -3,10 +3,15 @@ import React from 'react'
 const Counter = () => {
 
     let count = 5;
+
+    const countUp = () => {
+        count++;
+        alert(count);
+    }
     return ( 
         <div>
             <h5>My Counter</h5>
-            <button>-</button> {count} <button>+</button> <br />
+            <button>-</button> {count} <button onClick={countUp}>+</button> <br />
             Current count value is {count}
 
         </div>
