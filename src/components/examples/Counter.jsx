@@ -19,6 +19,7 @@ const Counter = () => {
             <h5>My Counter</h5>
             <button onClick={countDown}>-</button> {count} <button onClick={countUp}>+</button> <br />
             Current count value is {count}
+            {count<5 && <div>Count is in dangerous state.</div>}
 
         </div>
      );
