@@ -10,10 +10,14 @@ const Counter = () => {
         // alert(count);
         setCount(count + 1);
     }
+
+    const countDown = () => {
+        setCount(count - 1);
+    }
     return ( 
         <div>
             <h5>My Counter</h5>
-            <button>-</button> {count} <button onClick={countUp}>+</button> <br />
+            <button onClick={countDown}>-</button> {count} <button onClick={countUp}>+</button> <br />
             Current count value is {count}
 
         </div>
