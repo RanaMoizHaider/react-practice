@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import Button from '@mui/material/Button';
+import AddIcon from '@mui/icons-material/Add'
 
 const Counter = (props) => {
 
@@ -23,7 +25,7 @@ const Counter = (props) => {
         <div style={{color:isLight?"black":"white", backgroundColor:isLight?"white":"black"}}>
         {/* <div> */}
             <h5>My Counter</h5>
-            <button onClick={countDown}>-</button> {count} <button onClick={countUp}>+</button> <br />
+            <Button onClick={countDown} varient="contained" color="secondary">-</Button> {count} <Button onClick={countUp} varient="contained" color="primary"><AddIcon /></Button> <br />
             Current count value is {count}
             {count < 5 && <div>Count is in dangerous state.</div>}
             {count < 5 ? <div>Red Counter</div> : <div>Green Counter</div>}
