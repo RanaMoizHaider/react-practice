@@ -15,7 +15,8 @@ const Counter = () => {
         setCount(count - 1);
     }
     return ( 
-        <div>
+        <div style={{color:"white", backgroundColor:"black"}}>
+        {/* <div> */}
             <h5>My Counter</h5>
             <button onClick={countDown} className='btn btn-danger'>-</button> {count} <button onClick={countUp} className='btn btn-success'>+</button> <br />
             Current count value is {count}
