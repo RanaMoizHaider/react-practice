@@ -7,9 +7,9 @@ function App() {
     <div className="App">
       <h2>Hello Section B</h2>
       < Counter />
+      < Counter theme="light"/>
       < Counter />
-      < Counter />
-      < Counter />
+      < Counter theme="light"/>
     </div>
   );
 }
