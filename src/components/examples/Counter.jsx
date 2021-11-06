@@ -22,10 +22,16 @@ const Counter = (props) => {
     }
     return ( 
         // <div style={{color:color, backgroundColor:backgroundColor}}>
-        <div style={{color:isLight?"black":"white", backgroundColor:isLight?"white":"black"}}>
+        <div style={{
+            color:isLight?"black":"white",
+            backgroundColor:isLight?"white":"black"
+            }}>
         {/* <div> */}
             <h5>My Counter</h5>
-            <Button onClick={countDown} varient="contained" color="secondary">-</Button> {count} <Button onClick={countUp} varient="contained" color="primary"><AddIcon /></Button> <br />
+            <Button onClick={countDown} variant="contained" color="error">-</Button>
+            {count}
+            <Button onClick={countUp} variant="contained" color="primary"><AddIcon /></Button>
+            <br />
             Current count value is {count}
             {count < 5 && <div>Count is in dangerous state.</div>}
             {count < 5 ? <div>Red Counter</div> : <div>Green Counter</div>}
